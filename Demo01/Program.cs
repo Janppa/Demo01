@@ -6,11 +6,22 @@ using System.Threading.Tasks;
 
 namespace Demo01
 {
-    class Program
-    {
+   
+        int luku;
+    
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-        }
+            Console.WriteLine("Hello Github!");
+        Console.Write("Anna luku 3 > 1");
+        luku = int.Parse(Console.ReadLine());
+        if
+
+        Console.WriteLine("Annoit luvun " + luku);
+        // voidaan kirjoittaa myös
+        else
+        Console.WriteLine("joku muu luku");
+
     }
 }
+}
+
