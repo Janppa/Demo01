@@ -7,27 +7,17 @@ namespace Demo01
 
         static void Main(string[] args)
         {
+            int ika; //määritellään muuttujat
 
-            
-
-            int result1,result2,result3; //määritellään muuttujat
-            int summa, keskiarvo;
-
-
-            Console.WriteLine("Anna kolme lukua"); //Vastaa cout komentoa
+            Console.WriteLine("Kerro ikäsi"); //Vastaa cout komentoa
             //Kysytään käyttäjältä luvut
-            int.TryParse(Console.ReadLine(), out result1); 
-            int.TryParse(Console.ReadLine(), out result2);
-            int.TryParse(Console.ReadLine(), out result3);
+            int.TryParse(Console.ReadLine(), out ika);
 
+           if (ika < 18 ) { Console.WriteLine("ALAIKAINEN!"); }
+           if (ika >= 18 && ika <=65) { Console.WriteLine("Aikuinen!"); }
+           if (ika > 65) { Console.WriteLine("Seniori!"); }
 
-            
-            summa = (result1 + result2 + result3); //laskee lukujen summan
-            keskiarvo = (summa / 3); //laskee keskiarvon
-            Console.WriteLine("Summa: " + summa + "\nKeskiarvo: " + keskiarvo); //kirjoittaa tulokset konsoliin
-
-
-            Console.ReadLine();
+           Console.ReadLine();
 
  
         }
