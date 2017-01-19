@@ -1,27 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Demo01
+    int luku;
+string name = Console.ReadLine();
 {
-   
-        int luku;
-    
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello Github!");
-        Console.Write("Anna luku 3 > 1");
-        luku = int.Parse(Console.ReadLine());
-        if
+   class Program
+{
 
-        Console.WriteLine("Annoit luvun " + luku);
-        // voidaan kirjoittaa myös
+    static void Main(string[] args)
+    {
+
+        Console.Write("Anna luku 1-3");
+        luku = int.Parse("Anna luku > ");
+        if (luku = 1)
+            Console.WriteLine("Annoit luvun yksi");
+        else if
+            (luku = 2)
+            Console.WriteLine("Annoit luvun kaksi");
+        else if
+            (luku = 3)
+            Console.WriteLine("Annoit luvun kolme");
         else
-        Console.WriteLine("joku muu luku");
+            Console.WriteLine("joku muu luku");
+
+
+
 
     }
 }
-}
-
