@@ -10,21 +10,13 @@ namespace Tehtävä_5
     {
         static void Main(string[] args)
         {
-            int sekuntti, minuutti, tunti,sekuntti2;
-            Console.Write("Anna aika sekuntteina");
-            int.TryParse(Console.ReadLine(), out sekuntti);
-            Console.Write("Aika minuutteina "+(sekuntti / 3600));
-            tunti = sekuntti / 3600;//tunnit
+            TimeSpan t = TimeSpan.FromSeconds(secs);
 
-            Console.Write("Tunteja " + tunti);
-            minuutti = sekuntti / 60; //minuutit
+            string answer = string.Format("{0:D2}h:{1:D2}m:{2:D2}s",
+                            t.Hours,
+                            t.Minutes,
+                            t.Seconds,;
 
-            Console.Write("Minuutteja " + minuutti);
-            sekuntti2 = sekuntti - (minuutti * 60); //sekuntit
-            Console.Write("Sekuntteja " + sekuntti);
-
-            Console.Write(tunti + minuutti + sekuntti);
-           
 
 
         }
