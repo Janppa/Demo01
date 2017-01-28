@@ -10,50 +10,43 @@ namespace Tehtävä_8
     {
         static void Main(string[] args)
         {
-            int a,b,c;
-             
+            int a, b, c;
+            do
             {
 
-                Console.Write("Anna kolme kokonaislukua: \n");
+
+                Console.Write("\nAnna kolme kokonaislukua: \n");
                 a = int.Parse(Console.ReadLine());
-                if (a == 0) { 
-                    Console.Write("Kielletty numero");
+              
                     Console.Write("\nAnna toinen luku: ");
-                   
-                }
-                else {
+
+                
+                
                     Console.Write("Annoit luvun " + a);
                     Console.Write("\nAnna toinen luku: ");
-                }
                 
-                    b = int.Parse(Console.ReadLine());
-                if (b == 0)
-                {
-                    Console.Write("Kielletty numero");
+
+                b = int.Parse(Console.ReadLine());
+                
                     Console.Write("\nAnna kolmas luku: ");
-                }
-                else
-                {
+                
                     Console.Write("Annoit luvun " + b);
                     Console.Write("\nAnna kolmas luku: ");
-                }
+               
 
                 c = int.Parse(Console.ReadLine());
-                if (c == 0)
-                {
-                    Console.Write("Kielletty numero");
-                }
-                else
-                {
-                    Console.Write("Annoit luvun " + c);
-                }
-                    }
+
+                Console.Write("Annoit luvun " + c);
+
+
                 Console.Write("\nSuurin luku = " + Math.Max(Math.Max(a, b), c), "\n");
-            Console.WriteLine();
+                Console.Write("\nAnna luku 0 jos haluat lopettaa");
+                Console.WriteLine();
             }
-        
-        
+            while (a != 0); while (b != 0) ; while (c != 0) ;
+
 
 
         }
     }
+}
